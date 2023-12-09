@@ -24,8 +24,10 @@ const sendIpfsData = async (req, res) => {
     ],
   };
   let mCid;
+  let jsonStrign = JSON.stringify(finalData);
+  const bufferData = Buffer.from(jsonStrign);
   try {
-    mCid = await uploadLighthouse(finalData);
+    mCid = await uploadLighthouse(bufferData);
   } catch (error) {
     console.log(error);
   }
