@@ -21,5 +21,10 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "openai": "^4.20.1"
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }
