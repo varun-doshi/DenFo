@@ -3,7 +3,8 @@ const app = express();
 const userRouter = require("./routes/userRoutes.js");
 const ipfsRouter = require("./routes/ipfsRoutes.js");
 const port = 3000;
-
+const cors = require("cors");
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
