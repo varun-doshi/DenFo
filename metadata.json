@@ -1,0 +1,17 @@
+{
+  "fcid": "https://gateway.pinata.cloud/ipfs/QmQggTaosfa4EuEfACxE4WXBYLJqhEE99xYgBBzYaQCmd1/1.jpg",
+  "image": "https://gateway.pinata.cloud/ipfs/QmQggTaosfa4EuEfACxE4WXBYLJqhEE99xYgBBzYaQCmd1/1.jpg",
+  "name": "Bulbasaur",
+  "description": "While it is young, it uses the nutrients that are stored in the seed on its back in order to grow",
+  "context_vec": "context_vec",
+  "attributes": [
+    {
+      "trait_type": "fType",
+      "value": "image"
+    },
+    {
+      "trait_type": "timestamp",
+      "value": "678426"
+    }
+  ]
+}
