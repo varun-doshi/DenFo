@@ -22,16 +22,16 @@ const vectorSearch = async (
           k: 100,
         },
       }
-    } else {
-      searchFilter = {
-        index: "default",
-        text: {
-          query: `${searchQuery}`,
-          path: "metadata.description",
-          fuzzy: {},
-        },
-      }
-    }
+    // } else {
+    //   searchFilter = {
+    //     index: "default",
+    //     text: {
+    //       query: `${searchQuery}`,
+    //       path: "metadata.description",
+    //       fuzzy: {},
+    //     },
+    //   }
+    // }
 
     await client.connect();
     let skipNumber = page * limit;
