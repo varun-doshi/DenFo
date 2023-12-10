@@ -9,7 +9,7 @@ const sendIpfsData = async (req, res) => {
 
   const finalData = {
     fCid,
-    // image: fCid,
+    image: fCid,
     name,
     description,
     context_vec: await getVector(description),

@@ -22,7 +22,8 @@ const vectorSearch = async (
           k: 100,
         },
       }
-    // } else {
+    } 
+    // else {
     //   searchFilter = {
     //     index: "default",
     //     text: {
