@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const userRouter = require("./routes/userRoutes.js");
 const ipfsRouter = require("./routes/ipfsRoutes.js");
+const searchRouter = require("./routes/searchRoutes.js");
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
@@ -39,6 +40,7 @@ app.use(function (err, _req, res, next) {
 //user routes
 app.use("/user", userRouter);
 app.use("/ipfs", ipfsRouter);
+app.use("/search", searchRouter);
 
 app.listen(port, () => {
   console.log("server lsitening at port:", port);

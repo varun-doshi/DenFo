@@ -1,5 +1,6 @@
 require("dotenv").config();
 const lighthouse = require("@lighthouse-web3/sdk");
+const getVector = require("../utils/getVector");
 
 const sendIpfsData = async (req, res) => {
   const { fCid, name, fType, description, timestamp } = req.body;
@@ -11,7 +12,7 @@ const sendIpfsData = async (req, res) => {
     image: fCid,
     name,
     description,
-    context_vec: "con",
+    context_vec: await getVector(description),
     attributes: [
       {
         trait_type: "fType",

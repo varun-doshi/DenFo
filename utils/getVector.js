@@ -12,7 +12,7 @@ const getVector = async (description) => {
         input: description,
         encoding_format: "float",
     });
-    return embedding;
+    return embedding.data[0].embedding;
 };
   
 module.exports = getVector;
