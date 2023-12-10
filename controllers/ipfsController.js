@@ -32,7 +32,7 @@ const sendIpfsData = async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-  res.send(mCid);
+  res.send({ mCid });
 };
 
 const uploadLighthouse = async (data) => {
